@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "weekly_digests",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "post",
-    "description": ""
+    "singularName": "weekly-digest",
+    "pluralName": "weekly-digests",
+    "displayName": "weekly-digest"
   },
   "options": {
     "draftAndPublish": true
@@ -15,13 +14,13 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "from": {
+      "type": "date"
     },
-    "content": {
-      "type": "richtext"
+    "to": {
+      "type": "date"
     },
-    "media": {
+    "file": {
       "allowedTypes": [
         "images",
         "files",
