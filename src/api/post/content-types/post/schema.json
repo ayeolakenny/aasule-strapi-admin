@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,20 +21,21 @@
       "target": "api::author.author"
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "Published": {
-      "type": "datetime"
+      ]
     },
     "Body": {
       "type": "richtext"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }
